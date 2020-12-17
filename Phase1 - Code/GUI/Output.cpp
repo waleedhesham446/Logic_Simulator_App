@@ -143,6 +143,19 @@ void Output::DrawAND2(GraphicsInfo r_GfxInfo, bool selected) const
 void Output::DrawConnection(GraphicsInfo r_GfxInfo, bool selected) const
 {
 	//TODO: Add code to draw connection
+	if (selected)
+		pWind->SetPen(YELLOW, 3);
+	else
+		pWind->SetPen(DARKGREEN, 3);
+	pWind->DrawLine(r_GfxInfo.x1, r_GfxInfo.y1, r_GfxInfo.x2, r_GfxInfo.y2);
+}
+
+void Output::PrintLabel(GraphicsInfo r_GfxInfo, string msg) const
+{
+	// Print the label
+	pWind->SetFont(20, BOLD | ITALICIZED, BY_NAME, "Arial");
+	pWind->SetPen(UI.MsgColor);
+	pWind->DrawString(r_GfxInfo.x1, r_GfxInfo.y1, msg);
 }
 
 

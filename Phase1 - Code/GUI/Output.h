@@ -31,6 +31,7 @@ public:
 	
 	void PrintMsg(string msg) const;	//Print a message on Status bar
 
+	void Output::PrintLabel(GraphicsInfo r_GfxInfo, string msg) const;
 
 	~Output();
 };
