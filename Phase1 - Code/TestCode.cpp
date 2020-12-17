@@ -103,8 +103,13 @@ int main()
 	pOut->PrintMsg("Drawing connections, Normal, Highlighted, straight, and broken,  Click to continue");
 	
 	///TODO: Add code to draw connections, Normal, Highlighted, straight, and broken (all combinations) 
-
-	pIn->GetPointClicked(x,y);	//Wait for any click
+	GfxInfo.x1 = 100;		GfxInfo.y1 = 200;
+	GfxInfo.x2 = 300;		GfxInfo.y2 = 200;
+	pOut->DrawConnection(GfxInfo);
+	GfxInfo.x1 = 100;		GfxInfo.y1 = 300;
+	GfxInfo.x2 = 300;		GfxInfo.y2 = 300;
+	pOut->DrawConnection(GfxInfo, true);
+	pIn->GetPointClicked(x, y);	//Wait for any click
 	pOut->ClearDrawingArea();
 
 
