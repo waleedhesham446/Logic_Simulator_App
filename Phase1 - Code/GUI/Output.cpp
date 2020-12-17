@@ -93,8 +93,20 @@ void Output::CreateDesignToolBar() const
 
 	//First prepare List of images for each menu item
 	string MenuItemImages[ITM_DSN_CNT];
+	MenuItemImages[ITM_Buff] = "images\\Menu\\Menu_Buff.jpg";
+	MenuItemImages[ITM_INV] = "images\\Menu\\Menu_INV.jpg";
 	MenuItemImages[ITM_AND2] = "images\\Menu\\Menu_AND2.jpg";
 	MenuItemImages[ITM_OR2]  = "images\\Menu\\Menu_OR2.jpg";
+	MenuItemImages[ITM_NAND2]  = "images\\Menu\\Menu_NAND2.jpg";
+	MenuItemImages[ITM_NOR2]  = "images\\Menu\\Menu_NOR2.jpg";
+	MenuItemImages[ITM_XOR2]  = "images\\Menu\\Menu_XOR2.jpg";
+	MenuItemImages[ITM_XNOR2]  = "images\\Menu\\Menu_XNOR2.jpg";
+	MenuItemImages[ITM_AND3]  = "images\\Menu\\Menu_AND3.jpg";
+	MenuItemImages[ITM_NOR3]  = "images\\Menu\\Menu_NOR3.jpg";
+	MenuItemImages[ITM_XOR3]  = "images\\Menu\\Menu_XOR3.jpg";
+	MenuItemImages[ITM_Switch]  = "images\\Menu\\Menu_Switch.jpg";
+	MenuItemImages[ITM_LED]  = "images\\Menu\\Menu_LED.jpg";
+	MenuItemImages[ITM_CONNECTION]  = "images\\Menu\\Menu_CONNECTION.jpg";
 	MenuItemImages[ITM_EXIT] = "images\\Menu\\Menu_Exit.jpg";
 
 	//TODO: Prepare image for each menu item and add it to the list
