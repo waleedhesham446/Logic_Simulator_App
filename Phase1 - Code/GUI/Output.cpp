@@ -162,12 +162,12 @@ void Output::DrawConnection(GraphicsInfo r_GfxInfo, bool selected) const
 	pWind->DrawLine(r_GfxInfo.x1, r_GfxInfo.y1, r_GfxInfo.x2, r_GfxInfo.y2);
 }
 
-void Output::PrintLabel(GraphicsInfo r_GfxInfo, string msg) const
+void Output::PrintLabel(GraphicsInfo r_GfxInfo, string lbl) const
 {
 	// Print the label
 	pWind->SetFont(20, BOLD | ITALICIZED, BY_NAME, "Arial");
 	pWind->SetPen(UI.MsgColor);
-	pWind->DrawString(r_GfxInfo.x1, r_GfxInfo.y1, msg);
+	pWind->DrawString(r_GfxInfo.x1, r_GfxInfo.y1, lbl);
 }
 
 

@@ -125,9 +125,10 @@ int main()
 	
 	pOut->PrintMsg("Testing Input ability to read strings");
 
-	///TODO: Add code here to 
-	// 1- Read a string from the user on the status bar and print it inside the drawing area
-
+	string str;
+	str = pIn->GetSrting(pOut); //Get user input
+	GfxInfo.x1 = 100;	GfxInfo.y1 = 100;
+	pOut->PrintLabel(GfxInfo,str); //Print user input on the drawing window
 
 	pIn->GetPointClicked(x,y);	//Wait for any click
 	pOut->ClearDrawingArea();

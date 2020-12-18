@@ -13,13 +13,33 @@ void Input::GetPointClicked(int &x, int &y)
 
 string Input::GetSrting(Output *pOut)
 {
-	///TODO: Implement this Function
-	//Read a complete string from the user until the user presses "ENTER".
-	//If the user presses "ESCAPE". This function should return an empty string.
-	//"BACKSPACE" should be also supported
-	//User should see what he is typing at the status bar
-
-	return NULL;
+	string s;
+	char c;
+	do
+	{
+		pWind->WaitKeyPress(c); //wait for key presse
+		if (c == '\015') //return the user-entered string when the user presses "ENTER".
+		{
+			pOut->ClearStatusBar();
+			return s;
+		}
+		else if (c == '\010') //delet the last character entered when the user presses "BACKSPACE".
+		{
+			if (s.length() == 0)
+				continue;
+			s.pop_back();
+		}
+		else if (c == '\033') //return an empty string when the user presses "ESCAPE".
+		{
+			pOut->ClearStatusBar();
+			return "";
+		}
+		else
+		{
+			s.push_back(c);  //add the pressed character to the string variable.
+		}
+		pOut->PrintMsg(s);   //update the text displayed in the Status bar.
+	} while (true);
 }
 
 //This function reads the position where the user clicks to determine the desired action
