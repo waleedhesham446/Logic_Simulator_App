@@ -140,26 +140,192 @@ void Output::DrawAND2(GraphicsInfo r_GfxInfo, bool selected) const
 {
 	string GateImage;
 	if(selected)	//use image in the highlighted case
-		GateImage="Images\\Gates\\Gate_AND2_Hi.jpg";
+		GateImage="Images\\Gates\\Hilighted\\and.jpg";
 	else  
-		GateImage = "Images\\Gates\\Gate_AND2.jpg";
+		GateImage = "Images\\Gates\\Normal\\and.jpg";
 
 	//Draw AND2 Gate at Gfx_Info (1st corner)
 	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
 	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
 }
 
-//TODO: Add similar functions to draw all components
+//TODO: Add similar functions to draw all components	===================================>>>>>>>>>>>>		DONE
+
+void Output::DrawOR2(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\or.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\or.jpg";
+
+	//Draw OR2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+void Output::DrawNOT(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\not.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\not.jpg";
+
+	//Draw NOT Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+void Output::DrawNAND2(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\nand.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\nand.jpg";
+
+	//Draw NAND2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+void Output::DrawNOR2(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\nor.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\nor.jpg";
+
+	//Draw OR2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+
+void Output::DrawXOR2(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\xor.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\xor.jpg";
+
+	//Draw XOR2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+
+void Output::DrawXNOR2(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\xnor.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\xnor.jpg";
+
+	//Draw XNOR2 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+
+void Output::DrawBUFFER(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\buffer.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\buffer.jpg";
+
+	//Draw BUFFER Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+
+void Output::DrawAND3(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\and3.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\and3.jpg";
+
+	//Draw AND3 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+
+void Output::DrawNOR3(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\nor3.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\nor3.jpg";
+
+	//Draw NOR3 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+
+void Output::DrawXOR3(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\xor3.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\xor3.jpg";
+
+	//Draw XOR3 Gate at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+
+void Output::DrawSWITCH(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\switch_off.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\switch_off.jpg";
+
+	//Draw SWITCH at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
+
+
+void Output::DrawLED(GraphicsInfo r_GfxInfo, bool selected) const
+{
+	string GateImage;
+	if(selected)	//use image in the highlighted case
+		GateImage="Images\\Gates\\Hilighted\\led_off.jpg";
+	else  
+		GateImage = "Images\\Gates\\Normal\\led_off.jpg";
+
+	//Draw LED at Gfx_Info (1st corner)
+	//Set the Image Width & Height by AND2 Image Parameter in UI_Info
+	pWind->DrawImage(GateImage, r_GfxInfo.x1, r_GfxInfo.y1, UI.AND2_Width, UI.AND2_Height);
+}
 
 
 void Output::DrawConnection(GraphicsInfo r_GfxInfo, bool selected) const
 {
-	//TODO: Add code to draw connection
-	if (selected)
-		pWind->SetPen(YELLOW, 3);
-	else
-		pWind->SetPen(DARKGREEN, 3);
-	pWind->DrawLine(r_GfxInfo.x1, r_GfxInfo.y1, r_GfxInfo.x2, r_GfxInfo.y2);
+	//TODO: Add code to draw connection		======================================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>		DONE
+
+	if(selected)	//use connection in the highlighted case
+		pWind->SetPen(UI.SelectColor,3);
+	else  
+		pWind->SetPen(UI.DrawColor,3);
+
+	pWind->DrawLine(r_GfxInfo.x1, r_GfxInfo.y1, r_GfxInfo.x2, r_GfxInfo.y2);	
 }
 
 void Output::PrintLabel(GraphicsInfo r_GfxInfo, string lbl) const

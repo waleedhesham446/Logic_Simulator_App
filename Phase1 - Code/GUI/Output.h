@@ -24,6 +24,44 @@ public:
 	// Draws 2-input AND gate
 	void DrawAND2(GraphicsInfo r_GfxInfo, bool selected = false) const;
 
+	///TODO: Make similar functions for drawing all other gates, switch, and LED, .. etc		==========>>>>>		DONE
+
+	// Draws 2-input OR gate
+	void DrawOR2(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws NOT gate
+	void DrawNOT(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws 2-input NAND gate
+	void DrawNAND2(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws 2-input NOR gate
+	void DrawNOR2(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws 2-input XOR gate
+	void DrawXOR2(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws 2-input XNOR gate
+	void DrawXNOR2(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws BUFFER gate
+	void DrawBUFFER(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws 3-input AND gate
+	void DrawAND3(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws 3-input NOR gate
+	void DrawNOR3(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws 3-input XOR gate
+	void DrawXOR3(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws SWITCH
+	void DrawSWITCH(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
+	// Draws LED
+	void DrawLED(GraphicsInfo r_GfxInfo, bool selected = false) const;
+
 	///TODO: Make similar functions for drawing all other gates, switch, and LED, .. etc
 
 	// Draws Connection
