@@ -126,9 +126,24 @@ void Output::CreateDesignToolBar() const
 void Output::CreateSimulationToolBar() const
 {
 	UI.AppMode = SIMULATION;	//Simulation Mode
+	string MenuItemImages[ITM_SIM_CNT];
+	MenuItemImages[ITM_SIM] = "images\\Menu\\Menu_SIM.jpg";
+	MenuItemImages[ITM_TRUTH] = "images\\Menu\\Menu_TRUTH.jpg";
+	MenuItemImages[ITM_SAVE] = "images\\Menu\\Menu_SAVE.jpg";
+	MenuItemImages[ITM_LOAD] = "images\\Menu\\Menu_LOAD.jpg";
+	MenuItemImages[ITM_DELETE] = "images\\Menu\\Menu_DELETE.jpg";
+
+
+	for(int i=0; i<ITM_SIM_CNT; i++)
+		pWind->DrawImage(MenuItemImages[i],i*UI.ToolItemWidth,0,UI.ToolItemWidth, UI.ToolBarHeight);
+
+
+	//Draw a line under the toolbar
+	pWind->SetPen(RED,3);
+	pWind->DrawLine(0, UI.ToolBarHeight, UI.width, UI.ToolBarHeight);
 
 	//TODO: Write code to draw the simualtion toolbar (similar to that of design toolbar drawing)
-
+	//edited
 
 }
 
