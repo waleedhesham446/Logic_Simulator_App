@@ -43,9 +43,12 @@ enum ActionType
 
 	EXIT,		//Exit the application
 
+	NEXT,       //display the next gates group
+	PREVIOUS,   //display the previous gates group
+
 	STATUS_BAR,		//A click on the status bar
 	DSN_TOOL,	//A click on an empty place in the design tool bar
-
+	SIM_TOOL,   //A click on an empty place in the Simulation tool bar
 };
 
 //Possible Status for the pin
@@ -72,16 +75,20 @@ enum DsgnMenuItem //The items of the design menu (you should add more items)
 	ITM_OR2,		//OR gate item in menu
 	ITM_NAND2,
 	ITM_NOR2,
+	ITM_NEXT,
+	ITM_PREVIOUS,
 	ITM_XOR2,
 	ITM_XNOR2,
 	ITM_AND3,
 	ITM_NOR3,
 	ITM_XOR3,
+
 	ITM_Switch,
 	ITM_LED,
 	ITM_CONNECTION,
-
 	
+	ITM_SIM_MODE,
+
 	ITM_EXIT,		//Exit item
 	//TODO: Add more items names here
 	//EDITED
@@ -99,6 +106,8 @@ enum SimMenuItem //The items of the simulation menu (you should add more items)
 	ITM_SAVE,
 	ITM_LOAD,
 	ITM_DELETE,
+
+	ITM_DSN_MODE,
 	
 	//TODO:Add more items names here
 	

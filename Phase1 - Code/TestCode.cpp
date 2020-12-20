@@ -283,6 +283,17 @@ int main()
 		case ADD_NOR_GATE_2:
 				pOut->PrintMsg("Action: add 2-input NOR gate , Click anywhere");
 				break;
+		case NEXT:
+			UI.gatesGroup++;
+			pOut->PrintMsg("Action: NEXT , Click anywhere");
+			pOut->CreateDesignToolBar();
+			break;
+		case PREVIOUS:
+			if(UI.gatesGroup != 1)
+				UI.gatesGroup--;
+			pOut->PrintMsg("Action: PREVIOUS , Click anywhere");
+			pOut->CreateDesignToolBar();
+			break;
 
 		case ADD_XOR_GATE_2:
 				pOut->PrintMsg("Action: add 2-input XOR gate , Click anywhere");

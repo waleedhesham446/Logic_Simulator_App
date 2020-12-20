@@ -13,8 +13,8 @@ __declspec(selectany) //This line to prevent "redefinition error"
 struct UI_Info	//User Interface Info.
 {
 	MODE AppMode;		//Application Mode (design or simulation)
-	
-	static const int	width = 1200, height = 650,	//Window width and height
+	int gatesGroup;
+	static const int	width = 1000, height = 650,	//Window width and height
 						wx = 15 , wy = 15,			//Window starting coordinates
 						StatusBarHeight = 50,	//Status Bar Height
 						ToolBarHeight = 80,		//Tool Bar Height (distance from top of window to bottom line of toolbar)
