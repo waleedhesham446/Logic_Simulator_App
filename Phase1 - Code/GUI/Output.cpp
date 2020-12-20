@@ -380,9 +380,15 @@ void Output::PrintLabel(GraphicsInfo r_GfxInfo, string lbl) const
 	// Print the label
 	pWind->SetFont(20, BOLD | ITALICIZED, BY_NAME, "Arial");
 	pWind->SetPen(UI.MsgColor);
+
+	int lblWidth, lblHeight;
+	pWind->GetStringSize(lblWidth, lblHeight, lbl);
+	while(r_GfxInfo.x1 < 0 || r_GfxInfo.x1 > UI.width - (lblWidth+3*lbl.length()) || r_GfxInfo.y1 < UI.ToolBarHeight || r_GfxInfo.y1 > UI.height - UI.StatusBarHeight - lblHeight){
+		PrintMsg("You are not allowed to print your label outside the drawing area, choose your place again...");
+		pWind->WaitMouseClick(r_GfxInfo.x1, r_GfxInfo.y1);
+	}
 	pWind->DrawString(r_GfxInfo.x1, r_GfxInfo.y1, lbl);
 }
-
 
 Output::~Output()
 {
