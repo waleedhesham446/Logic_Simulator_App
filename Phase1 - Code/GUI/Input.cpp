@@ -13,6 +13,7 @@ void Input::GetPointClicked(int &x, int &y)
 
 string Input::GetSrting(Output *pOut)
 {
+	pWind->FlushKeyQueue();
 	string s;
 	char c;
 	do
@@ -21,6 +22,7 @@ string Input::GetSrting(Output *pOut)
 		if (c == '\015') //return the user-entered string when the user presses "ENTER".
 		{
 			pOut->ClearStatusBar();
+			pWind->FlushMouseQueue();
 			return s;
 		}
 		else if (c == '\010') //delet the last character entered when the user presses "BACKSPACE".
@@ -32,6 +34,7 @@ string Input::GetSrting(Output *pOut)
 		else if (c == '\033') //return an empty string when the user presses "ESCAPE".
 		{
 			pOut->ClearStatusBar();
+			pWind->FlushMouseQueue();
 			return "";
 		}
 		else
